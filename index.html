@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080d0f">
-  <meta name="description" content="AIGlassAware helps you notice nearby smart-glasses signals using Bluetooth broadcast patterns, with private on-device history and no location permission.">
+  <meta name="description" content="Scan visible Bluetooth broadcasts and review possible smart-glasses rule matches. AIGlassAware cannot detect all hidden cameras or verify recording activity.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="AIGlassAware — Notice nearby smart-glasses signals">
   <meta property="og:description" content="Private, on-device awareness for nearby smart-glasses Bluetooth broadcasts.">
@@ -58,12 +58,12 @@
         </div>
         <h1 id="hero-title">AIGlassAware</h1>
         <p class="hero-lede">
-          <span class="i18n-en">Notice signals associated with nearby smart glasses before a sensitive conversation begins.</span>
-          <span class="i18n-zh">在敏感谈话开始前，留意附近可能与智能眼镜相关的蓝牙信号。</span>
+          <span class="i18n-en">Scan visible Bluetooth broadcasts and review possible smart-glasses rule matches.</span>
+          <span class="i18n-zh">扫描可见的蓝牙广播，查看可能与部分智能眼镜相关的规则匹配。</span>
         </p>
         <p class="hero-detail">
-          <span class="i18n-en">AIGlassAware analyzes Bluetooth broadcasts on your iPhone and keeps detection history on the device. No account. No location permission. No connection to nearby devices.</span>
-          <span class="i18n-zh">AIGlassAware 在 iPhone 本地分析蓝牙广播，检测历史仅保存在设备中。无需账号，不请求定位，也不会连接附近设备。</span>
+          <span class="i18n-en">Foreground scanning with on-device history. Matches can be wrong and devices may be missed. The app cannot detect all hidden cameras, verify recording activity, or establish that a space is free of cameras.</span>
+          <span class="i18n-zh">前台扫描，记录保存在本机。匹配可能误报或漏检。本应用无法发现所有隐藏摄像头，无法判断设备是否正在录制，也不能确认场所内没有摄像头。</span>
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#how-it-works">
@@ -84,7 +84,7 @@
       <div class="hero-visual" aria-label="AIGlassAware detection screen">
         <div class="signal-rings" aria-hidden="true"><i></i><i></i><i></i></div>
         <div class="phone phone-hero">
-          <img class="localized-image" src="assets/scan-detected-en.webp" data-src-en="assets/scan-detected-en.webp" data-src-zh="assets/scan-detected-zh.webp" alt="AIGlassAware showing a suspected nearby smart-glasses signal" width="603" height="1311">
+          <img class="localized-image" src="assets/scan-detected-en.webp" data-src-en="assets/scan-detected-en.webp" data-src-zh="assets/scan-detected-zh.webp" alt="AIGlassAware purchase screen explaining Bluetooth scanning scope and limitations" width="603" height="1311">
         </div>
         <div class="signal-label signal-label-top">
           <strong><span class="i18n-en">Local analysis</span><span class="i18n-zh">本地分析</span></strong>
@@ -115,7 +115,7 @@
           <div class="feature-copy">
             <span class="feature-number">01</span>
             <h3><span class="i18n-en">Live proximity awareness</span><span class="i18n-zh">实时距离感知</span></h3>
-            <p><span class="i18n-en">A simple radar view combines known broadcast fingerprints and signal strength to surface supported nearby devices.</span><span class="i18n-zh">简洁的雷达视图结合已知广播指纹与信号强度，提示附近可能存在的已支持设备。</span></p>
+            <p><span class="i18n-en">A radar-style view shows possible broadcast-rule matches and rough proximity estimates from signal strength. It cannot verify device identity or recording activity.</span><span class="i18n-zh">雷达示意图展示可能的广播规则匹配，并根据信号强度粗略估算距离，无法确认设备身份或录制行为。</span></p>
           </div>
           <div class="radar-demo" aria-hidden="true">
             <span class="radar-sweep"></span><span class="radar-point radar-point-one"></span><span class="radar-point radar-point-two"></span>
@@ -124,14 +124,14 @@
 
         <article class="feature-card">
           <span class="feature-number">02</span>
-          <h3><span class="i18n-en">Meeting mode</span><span class="i18n-zh">会议 / 保密模式</span></h3>
-          <p><span class="i18n-en">Use more prominent sound, haptic, and visual alerts when a conversation needs extra attention.</span><span class="i18n-zh">当谈话需要格外谨慎时，启用更明显的声音、触觉与视觉提醒。</span></p>
+          <h3><span class="i18n-en">Stronger rule-match alerts</span><span class="i18n-zh">增强规则匹配提醒</span></h3>
+          <p><span class="i18n-en">Choose stronger sound, haptic, and visual alerts for Bluetooth rule matches. An alert does not verify a device's identity or recording activity.</span><span class="i18n-zh">可为蓝牙规则匹配开启更明显的声音、触觉与视觉提醒。提醒不代表已确认设备身份或录制行为。</span></p>
         </article>
 
         <article class="feature-card">
           <span class="feature-number">03</span>
           <h3><span class="i18n-en">Two sensitivity levels</span><span class="i18n-zh">两档检测灵敏度</span></h3>
-          <p><span class="i18n-en">Choose Standard for fewer false positives or High Sensitivity for broader nearby-device discovery.</span><span class="i18n-zh">标准模式减少误报；高灵敏度模式扩大附近设备的发现范围。</span></p>
+          <p><span class="i18n-en">Standard scans intermittently to save power. High Sensitivity scans continuously and uses more battery. Both use the same matching rules and can miss devices.</span><span class="i18n-zh">标准模式间歇扫描以节省电量；高灵敏度模式持续扫描，耗电更多。两者使用相同的匹配规则，都可能漏检。</span></p>
         </article>
 
         <article class="feature-card feature-wide feature-history">
@@ -177,8 +177,8 @@
       <div class="limit-mark" aria-hidden="true">!</div>
       <div>
         <p class="kicker"><span class="i18n-en">Important limitation</span><span class="i18n-zh">重要使用边界</span></p>
-        <h2 id="limits-title"><span class="i18n-en">A detection is an estimate, not proof of recording.</span><span class="i18n-zh">检测结果只是估算，不代表设备正在录制。</span></h2>
-        <p><span class="i18n-en">Bluetooth identifiers may be shared by other products, and signal strength changes with walls, people, interference, and device power. Results should never be used to accuse anyone.</span><span class="i18n-zh">其他产品可能使用相同蓝牙标识，墙体、人群、无线干扰与设备功率也会影响信号强度。请勿依据检测结果指责任何人。</span></p>
+        <h2 id="limits-title"><span class="i18n-en">Bluetooth matches cannot confirm recording or a camera-free space.</span><span class="i18n-zh">蓝牙匹配无法确认录制行为，也无法确认场所内没有摄像头。</span></h2>
+        <p><span class="i18n-en">This app cannot detect all hidden cameras or all smart glasses. It can only compare visible broadcasts with supported patterns. Devices may be missed or misidentified. Signal strength varies with the environment. Results should never be used to accuse anyone.</span><span class="i18n-zh">本应用无法发现所有隐藏摄像头或所有智能眼镜，只能将可见广播与已支持特征进行比较，可能漏检或误判。信号强度受环境影响。请勿依据匹配结果指责任何人。</span></p>
       </div>
     </section>
 
@@ -188,9 +188,9 @@
         <h2 id="faq-title"><span class="i18n-en">What the app can and cannot tell you.</span><span class="i18n-zh">了解 App 能告诉你什么，以及不能告诉你什么。</span></h2>
       </div>
       <div class="faq-list">
-        <details><summary><span class="i18n-en">Can AIGlassAware tell whether a camera is recording?</span><span class="i18n-zh">AIGlassAware 能判断摄像头是否正在录制吗？</span></summary><p><span class="i18n-en">No. The app estimates whether a supported device may be nearby from Bluetooth broadcasts. It cannot read or verify a device's recording state.</span><span class="i18n-zh">不能。App 只能根据蓝牙广播估算附近是否可能存在已支持设备，无法读取或验证设备的录制状态。</span></p></details>
+        <details><summary><span class="i18n-en">Can AIGlassAware find all hidden cameras or tell whether a device is recording?</span><span class="i18n-zh">AIGlassAware 能找到所有隐藏摄像头，或判断设备是否正在录制吗？</span></summary><p><span class="i18n-en">No. It only matches some visible Bluetooth broadcasts. Devices that do not broadcast, use unsupported patterns, or are out of range may be missed. It cannot verify whether a device has a camera or is recording. No matches does not mean no cameras are present.</span><span class="i18n-zh">不能。它只能匹配部分可见的蓝牙广播。不广播、特征未被支持或超出范围的设备可能被漏检。它无法确认设备是否配备摄像头或正在录制，没有匹配结果也不代表没有摄像头。</span></p></details>
         <details><summary><span class="i18n-en">Does the app connect to smart glasses?</span><span class="i18n-zh">App 会连接智能眼镜吗？</span></summary><p><span class="i18n-en">No. It passively reads visible Bluetooth advertisements and does not pair with, control, block, or interfere with nearby devices.</span><span class="i18n-zh">不会。它只被动读取可见的蓝牙广播，不会配对、控制、阻断或干扰附近设备。</span></p></details>
-        <details><summary><span class="i18n-en">Why can results be inaccurate?</span><span class="i18n-zh">为什么结果可能不准确？</span></summary><p><span class="i18n-en">Bluetooth signatures can overlap across products, and radio signal strength is affected by the environment. High Sensitivity can discover more devices but may increase false positives.</span><span class="i18n-zh">不同产品的蓝牙特征可能重叠，无线信号也会受到环境影响。高灵敏度模式能发现更多设备，同时也可能增加误报。</span></p></details>
+        <details><summary><span class="i18n-en">Why can results be inaccurate?</span><span class="i18n-zh">为什么结果可能不准确？</span></summary><p><span class="i18n-en">Bluetooth patterns can overlap across products, some devices do not broadcast visible signals, and signal strength changes with the environment. Both scanning modes use the same matching rules and may produce false matches or miss devices.</span><span class="i18n-zh">不同产品的蓝牙特征可能重叠，部分设备不发送可见广播，信号强度也受环境影响。两种扫描模式使用相同的匹配规则，都可能误报或漏检。</span></p></details>
         <details><summary><span class="i18n-en">Where is my history stored?</span><span class="i18n-zh">检测历史保存在哪里？</span></summary><p><span class="i18n-en">Detection history and preferences are stored locally on your iPhone and can be cleared in the app.</span><span class="i18n-zh">检测历史与偏好设置保存在你的 iPhone 本地，并可在 App 内清除。</span></p></details>
       </div>
     </section>
